@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    background: #fafafa;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 935px;
+    margin: 32px auto 0;
+}
+
+.wrapper .phone, .wrapper .continue {
+	width: 50%;
+}
+
+.phone {
+    background-image: url('../img/phone.png');
+    background-size: auto;
+    height: 618px;
+}
+
+.continue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 12px;
+    max-width: 350px;
+}
+
+.continue img {
+    justify-content: center;
+    height: 40px;
+}
+
+.continue p {
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+.group {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
+.group h1 {
+    margin: 22px auto 12px;
+}
+
+.sign-in {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in .field {
+    margin: 0px 40px 6px;
+    display: flex;
+}
+
+.sign-in .button {
+    margin: 8px 40px 8px;
+    display: flex;
+}
+
+.sign-in input {
+    font-size: 12px;
+    color: #262626;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    line-height: 18px;
+    padding: 9px 0 7px 8px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.sign-in button {
+    font-weight: 600;
+    background-color: rgba(0,149,246,.3);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 5px 9px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    color: #fff;
+}
+
+.separator { 
+    margin: 10px 40px 18px;
+    flex-direction: row;
+}
+
+.separator-line {
+    flex-grow: 1;
+    background-color: #dbdbdb;
+    height: 1px;
+    top: .45em;
+}
+
+.sign-in-fb {
+    color: #385185;
+    font-weight: 600;
+}
+
+.password-reset {
+    margin-top: 12px;
+}
+
+.password-reset p {
+    color: #00376b;
+    font-size: 12px;
+}
+
+.sign-up .link {
+    color: #0095f6;
+    font-weight: 600;
+}
+
+.group .wordmark {
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+    height: 51px;
+    width: 175px;
+    background-image: url(../img/spriteWordmark.png);
+    overflow: hidden;
+    text-indent: 110%;
+}
+
+.get-app {
+    display: flex;
+    flex-direction: column;
+}
+
+.down-app {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0 10px 0;
+    justify-content: center;
+}
+
+.down-app a {
+    margin-right: 8px;
+}
+
+.down-app a:last-child {
+    margin-right: 0px;
+}
