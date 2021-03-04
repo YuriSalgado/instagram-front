@@ -106,26 +106,58 @@ main {
 
 .separator { 
     margin: 10px 40px 18px;
+    display: flex;
     flex-direction: row;
 }
 
 .separator-line {
+    position: relative;
     flex-grow: 1;
     background-color: #dbdbdb;
     height: 1px;
     top: .45em;
 }
 
-.sign-in-fb {
+.separator-text {
+    color: #8e8e8e;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    margin: 0 18px;
+    text-transform: uppercase;
+}
+
+.sign-in-social {
     color: #385185;
     font-weight: 600;
+    text-align: center;
+    margin: 8px 40px 8px 40px;
+}
+
+.sign-in-social div {
+    display: block;
+}
+
+.sign-in-social div span {
+    vertical-align: middle;
+}
+
+.fb-icon {
+    background-image: url(../img/spriteWordmark.png);
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+    vertical-align: middle;
 }
 
 .password-reset {
     margin-top: 12px;
+    text-align: center;
 }
 
-.password-reset p {
+.password-reset a {
     color: #00376b;
     font-size: 12px;
 }
