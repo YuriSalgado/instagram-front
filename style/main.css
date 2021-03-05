@@ -2,7 +2,6 @@ html, body{
     height: 100%;
 }
 
-
 * {
     padding: 0;
     margin: 0;
@@ -24,7 +23,7 @@ main {
     flex-grow: 1;
 }
 
-.wrapper {
+.article {
     display: flex;
     flex-grow: 1;
     flex-direction: row;
@@ -34,30 +33,33 @@ main {
     padding-bottom: 32px;
 }
 
-.phone {
+.screenshot {
     background-image: url('../img/phone.png');
     background-size: auto;
     align-self: center;
     height: 618px;
     flex-basis: 454px;
+    margin-left: -35px;
+    margin-right: -15px;
 }
 
 .continue {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     justify-content: center;
     margin-top: 12px;
     max-width: 350px;
 }
 
-.continue img {
-    justify-content: center;
-    height: 40px;
+.get {
+    display: flex;
+    flex-direction: column;
 }
 
-.continue p {
-    margin: 10px 20px 10px 20px;
-    text-align: center;
+.get .down-app img {
+    justify-content: center;
+    height: 40px;
 }
 
 .group {
@@ -67,8 +69,25 @@ main {
     padding: 10px 0;
 }
 
-.group h1 {
+.group p, .get p {
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+}
+
+.group .wordmark {
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+    height: 51px;
+    width: 175px;
+    background-image: url(../img/spriteWordmark.png);
+    overflow: hidden;
+    text-indent: 110%;
     margin: 22px auto 12px;
+
+}
+
+.group .container {
+    margin-bottom: 10px;
 }
 
 .sign-in {
@@ -87,7 +106,7 @@ main {
     display: flex;
 }
 
-.sign-in input {
+.sign-in .field input {
     font-size: 12px;
     color: #262626;
     background: #fafafa;
@@ -100,7 +119,7 @@ main {
     flex-basis: auto;
 }
 
-.sign-in button {
+.sign-in .button button {
     font-weight: 600;
     background-color: rgba(0,149,246,.3);
     border: 1px solid transparent;
@@ -150,7 +169,7 @@ main {
     vertical-align: middle;
 }
 
-.fb-icon {
+.sign-in-social div span.fb-icon {
     background-image: url(../img/spriteWordmark.png);
     background-repeat: no-repeat;
     background-position: -414px -259px;
@@ -173,21 +192,6 @@ main {
 .sign-up .link {
     color: #0095f6;
     font-weight: 600;
-}
-
-.group .wordmark {
-    background-repeat: no-repeat;
-    background-position: 0 -130px;
-    height: 51px;
-    width: 175px;
-    background-image: url(../img/spriteWordmark.png);
-    overflow: hidden;
-    text-indent: 110%;
-}
-
-.get-app {
-    display: flex;
-    flex-direction: column;
 }
 
 .down-app {
