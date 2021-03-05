@@ -1,3 +1,8 @@
+html, body{
+    height: 100%;
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -10,28 +15,30 @@
 section {
     display: flex;
     flex-direction: column;
+    min-height: 100%;
 }
 
 main {
     background: #fafafa;
+    display: flex;
+    flex-grow: 1;
 }
 
 .wrapper {
     display: flex;
+    flex-grow: 1;
     flex-direction: row;
     justify-content: center;
     max-width: 935px;
     margin: 32px auto 0;
 }
 
-.wrapper .phone, .wrapper .continue {
-	width: 50%;
-}
-
 .phone {
     background-image: url('../img/phone.png');
     background-size: auto;
+    align-self: center;
     height: 618px;
+    flex-basis: 454px;
 }
 
 .continue {
